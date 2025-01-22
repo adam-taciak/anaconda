@@ -1,5 +1,8 @@
 # Instrukcja przygotowania i weryfikacji środowiska
 
+> [!NOTE]  
+> Przed przystąpieniem do przygotowania środowiska, proszę upewnić się czy nie zostaną naruszone warunki licencji środowiska **Anaconda** (https://www.anaconda.com/pricing).
+
 ## 1. Instalacja środowiska
 - Proszę pobrać instalator z oficjalnej strony [Anaconda](https://www.anaconda.com/products/distribution#download-section)
 - Następnie przeprowadzić instalację. Instalator jest dość typowy. Środowisko można zainstalować dla bieżącego użytkownika, nie ma potrzeby przeprowadzania instalacji dla wszystkich użytkowników systemu.
