@@ -17,7 +17,7 @@
 - Następnie proszę przeprowadzić instalację modułów z których będziemy korzystać w trakcie szkolenia. Wystarczy uruchomić poniższe polecenie:
 
 ```
-conda install requests xlwings openpyxl pandas mysql-connector-python exchangelib
+conda install conda-forge::requests conda-forge::xlwings conda-forge::openpyxl conda-forge::pandas conda-forge::mysql-connector-python conda-forge::exchangelib
 ```
 
 4. **Konfiguracja proxy**
