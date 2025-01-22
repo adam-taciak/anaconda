@@ -6,7 +6,7 @@
 - Szczegółowa instrukcja instalacji znajduje się w dokumentacji: [Installing Anaconda Distribution](https://docs.anaconda.com/anaconda/install/)
 
 2. **Uruchomienie i weryfikacja**
-- Po zakończonej instalacji proszę uruchomić Anaconda Navigator, przejść do zakładki **Environments**, kliknąć w zielony przycisk i z menu wybrać **Terminal**
+- Po zakończonej instalacji proszę uruchomić **Anaconda Navigator**, przejść do zakładki **Environments**, kliknąć w zielony przycisk i z menu wybrać **Terminal**
 
 ![image](./step-1.png)
 
