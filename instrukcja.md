@@ -181,4 +181,7 @@ proxy_servers:
 
 
 ## 4. **Dodatkowe certyfikaty**
-- Jeżeli 
+- Jeżeli systemy uczestników szkolenia znajdują się za narzędziami ingerującymi w transmisję sieciową jak **ForcePoint**, **PaloAlto**, itp konieczne może być doinstalowanie dodatkowych certyfikatów
+- Anaconda używa modułu **requests** do komunikacji z siecią. **Requests** korzysta ze zmiennej środowiskowej `REQUESTS_CA_BUNDLE`
+
+- https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/non-standard-certs.html
