@@ -185,3 +185,6 @@ proxy_servers:
 - Anaconda używa modułu **requests** do komunikacji z siecią. **Requests** korzysta ze zmiennej środowiskowej `REQUESTS_CA_BUNDLE`
 
 - https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/non-standard-certs.html
+
+## 5. **Końcowy test**
+- Aby upewnić się że wszystko działa prawidło, 
