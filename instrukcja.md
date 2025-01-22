@@ -1,11 +1,11 @@
 # Instrukcja przygotowania i weryfikacji środowiska
 
-1. **Instalacja środowiska**
+## 1. Instalacja środowiska
 - Proszę pobrać instalator z oficjalnej strony [Anaconda](https://www.anaconda.com/products/distribution#download-section)
 - Następnie przeprowadzić instalację. Instalator jest dość typowy. Środowisko można zainstalować dla bieżącego użytkownika, nie ma potrzeby przeprowadzania instalacji dla wszystkich użytkowników systemu.
 - Szczegółowa instrukcja instalacji znajduje się w dokumentacji: [Installing Anaconda Distribution](https://docs.anaconda.com/anaconda/install/)
 
-2. **Uruchomienie i weryfikacja**
+## 2. **Uruchomienie i weryfikacja**
 - Po zakończonej instalacji proszę uruchomić **Anaconda Navigator**, przejść do zakładki **Environments**, kliknąć w zielony przycisk i z menu wybrać **Terminal**
 
 ![image](./step-1.png)
@@ -154,9 +154,18 @@ Executing transaction: done
 (base) C:\Users\tacia>
 ```
 
-3. **Konfiguracja proxy**
+## 3. **Konfiguracja proxy**
 
 - Jeżeli pojawią się problemy z pobranienm modułów, konieczne może być dokonfigurowanie ustawień proxy.
+- W **Anaconda Navigator** proszę kliknąć **File** i wybrać **Preferences**.
+
+![image](./step-3.png)
+
+- Proszę kliknąć w przycisk **Configure Conda**.
+
+![image](./step-4.png)
+
+- Plik konfiguracyjny jest w formacie `YAML`. Proszę dodać poniże parametry i zapisać zmiany.
 
 ```yaml
 proxy_servers:
@@ -164,10 +173,12 @@ proxy_servers:
     https: https://username:password@corp.com:8080
 ```
 
-- https://docs.anaconda.com/working-with-conda/reference/proxy/
-- https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/settings.html#proxy-servers-configure-conda-for-use-behind-a-proxy-server
-- 
+- Po restarcie Anacondy, proszę powtórzyć krok 2.
+
+- Szczegółowe informacje na temat konfiguracji proxy można znaleźć w oficjalnej dokumentacji.
+  - https://docs.anaconda.com/working-with-conda/reference/proxy/
+  - https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/settings.html#proxy-servers-configure-conda-for-use-behind-a-proxy-server
 
 
-4. **Dodatkowe certyfikaty**
+## 4. **Dodatkowe certyfikaty**
 - Jeżeli 
