@@ -6,6 +6,18 @@
 - Szczegółowa instrukcja instalacji znajduje się w dokumentacji: [Installing Anaconda Distribution](https://docs.anaconda.com/anaconda/install/)
 
 2. **Uruchomienie i weryfikacja**
-- Po zakończonej instalacji proszę uruchomić Anaconda Navigator
+- Po zakończonej instalacji proszę uruchomić Anaconda Navigator, przejść do zakładki **Environments**, kliknąć w zielony przycisk i z menu wybrać **Terminal**
+
+![image](./step-1.png)
+
+- W uruchomionym terminalu, musi być widoczna nazwa uruchomionego środowiska:
+
+![image](./step-2.png)
+
+- Następnie proszę przeprowadzić instalację modułów z których będziemy korzystać w trakcie szkolenia. Wystarczy uruchomić poniższe polecenie:
+
+```
+conda install requests xlwings openpyxl pandas mysql-connector-python exchangelib
+```
 
 4. **Konfiguracja proxy**
