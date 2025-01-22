@@ -182,9 +182,36 @@ proxy_servers:
 
 ## 4. **Dodatkowe certyfikaty**
 - Jeżeli systemy uczestników szkolenia znajdują się za narzędziami ingerującymi w transmisję sieciową jak **ForcePoint**, **PaloAlto**, itp konieczne może być doinstalowanie dodatkowych certyfikatów
-- Anaconda używa modułu **requests** do komunikacji z siecią. **Requests** korzysta ze zmiennej środowiskowej `REQUESTS_CA_BUNDLE`
-
-- https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/non-standard-certs.html
+- Anaconda używa modułu **requests** do komunikacji z siecią. **Requests** korzysta ze zmiennej środowiskowej `REQUESTS_CA_BUNDLE` do ładowania certyfikatów CA.
+- Jeżeli jest to możliwe, proszę o zdefiniowanie tej zmiennej wraz ze ścieżką do niestandardowych certyfikatów.
+- Jeżeli taka konfiguracja nie jest możliwa, proszę o przekazanie uczestnikom szkolenia ścieżki do takich certyfikatów, wówczas przed każdym uruchomieniem Anacondy, uczestnicy będą definiować zmienną w terminalu przed uruchomieniem środowiska
+- Więcej szczegółów można znaleźć w oficjalnej dokumentacji:
+  - https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/non-standard-certs.html
 
 ## 5. **Końcowy test**
-- Aby upewnić się że wszystko działa prawidło, 
+- Aby upewnić się że wszystko działa prawidło, proszę wykonać następujące czynności
+- Zainstalować **JupyterLab**
+
+![image](./step-5.png)
+
+- Uruchomić **JupyterLab**
+
+![image](./step-6.png)
+
+- Stworzyć nowy notatnik
+
+![image](./step-7.png)
+
+- Następnie do nowej komórki proszę skopiować poniższy kod
+```python
+import requests
+
+r = requests.get('https://google.com')
+print(r.text)
+```
+
+- Aby wykonać program, proszę nacisnąć **Shift** + **Enter**
+
+![image](./step-8.png)
+
+- Jeżeli wszystko działa prawidłowo, polecenie powinno wyświetlić zawartość strony https://google.com.
